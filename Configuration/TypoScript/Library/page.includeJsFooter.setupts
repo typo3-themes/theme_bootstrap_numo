@@ -1,0 +1,7 @@
+page.includeJSFooter {
+    magnific-popup = EXT:theme_bootstrap_numo/Resources/Public/JavaScript/jquery.magnific-popup.min.js
+    smooth-scroll = EXT:theme_bootstrap_numo/Resources/Public/JavaScript/smooth-scroll.js
+    jRespond = EXT:theme_bootstrap_numo/Resources/Public/JavaScript/jRespond.min.js
+    script = EXT:theme_bootstrap_numo/Resources/Public/JavaScript/script.js
+
+}

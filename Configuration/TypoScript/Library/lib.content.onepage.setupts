@@ -1,0 +1,121 @@
+lib.content.onepage >
+lib.content.onepage = COA
+lib.content.onepage {
+    20 = HMENU
+    20 {
+        entryLevel = 0
+        # excludeDoktypes < lib.navigation.main.10.excludeDoktypes
+        1 = TMENU
+        1 {
+            noBlur = 1
+            NO = 1
+            NO {
+                doNotLinkIt = 1
+                doNotShowLink = 1
+                stdWrap2 {
+                    cObject = COA
+                    cObject {
+                        10 = LOAD_REGISTER
+                        10 {
+                            curentPageId.cObject = TEXT
+                            curentPageId.cObject {
+                                field = uid
+                            }
+
+                            sectionID.cObject = TEXT
+                            sectionID.cObject {
+                                data = field:title
+                                insertData = 1
+                                trim = 1
+                                crop = 80
+                                stdWrap {
+                                    case = lower
+                                    replacement {
+                                        10 {
+                                            search.char = 32
+                                            replace = _
+                                        }
+                                        20 {
+                                            search = &
+                                            replace = and
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        20 < page.10
+#                        20 {
+#                            variables {
+#                                showHeader.value = 0
+#                                showFooter.value = 0
+#                            }
+#                        }
+
+                        wrap = <section id="{register:sectionID}">|</section>
+                        wrap.insertData = 1
+                    }
+                }
+
+                wrapItemAndSub = |
+            }
+        }
+
+        # 2 < .1
+    }
+
+    90 = RESTORE_REGISTER
+}
+
+# page.10.variables.onePage.value = 1
+
+
+// Onepage anchor menu
+
+lib.navigation.main >
+lib.navigation.main = COA
+lib.navigation.main {
+    20 = HMENU
+    20 {
+        # excludeDoktypes < lib.navigation.main.10.excludeDoktypes
+        1 = TMENU
+        1 {
+            noBlur = 1
+            NO = 1
+            NO {
+                doNotLinkIt = 1
+                wrapItemAndSub = <li>|</li>
+                stdWrap.cObject = TEXT
+                stdWrap.cObject {
+                    field = nav_title // title
+                    typolink {
+                        parameter.data = field:pid
+                        parameter.ifEmpty.data = page:uid
+                        parameter.insertData = 1
+                        title.field = title // subtitle
+                        ATagParams = data-scroll
+                        section {
+                            data = field:title
+                            insertData = 1
+                            trim = 1
+                            crop = 80
+                            stdWrap {
+                                case = lower
+                                replacement {
+                                    10 {
+                                        search.char = 32
+                                        replace =
+                                    }
+                                    20 {
+                                        search = &
+                                        replace = and
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

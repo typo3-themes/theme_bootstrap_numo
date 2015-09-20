@@ -1,0 +1,46 @@
+lib.menu.footer >
+lib.menu.footer = COA
+lib.menu.footer {
+    20 = HMENU
+    20 {
+        1 = TMENU
+        1 {
+            noBlur = 1
+            NO = 1
+            NO {
+                doNotLinkIt = 1
+                wrapItemAndSub = <li class="border-right">|</li>|*|<li class="border-right">|</li>|*|<li>|</li>
+                stdWrap.cObject = TEXT
+                stdWrap.cObject {
+                    field = nav_title // title
+                    typolink {
+                        parameter.data = field:pid
+                        parameter.ifEmpty.data = page:uid
+                        parameter.insertData = 1
+                        title.field = title // subtitle
+                        ATagParams = data-scroll
+                        section {
+                            data = field:title
+                            insertData = 1
+                            trim = 1
+                            crop = 80
+                            stdWrap {
+                                case = lower
+                                replacement {
+                                    10 {
+                                        search.char = 32
+                                        replace =
+                                    }
+                                    20 {
+                                        search = &
+                                        replace = and
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

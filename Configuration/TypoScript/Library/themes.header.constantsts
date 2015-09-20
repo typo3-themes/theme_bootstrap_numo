@@ -1,0 +1,17 @@
+#############################################
+# Header: Header constants
+#############################################
+
+
+# Logo main
+#############################################
+
+# cat=header,advanced/header_logo_main/; type=string; label= Header-Logo: Path and filename (fileadmin/.../logo.png)
+themes.configuration.header.logo.main.file = EXT:theme_bootstrap_numo/Resources/Public/images/logo.png
+
+# cat=header,expert/header_logo_main/; type=int+; label= Header-Logo: Width
+themes.configuration.header.logo.main.width = 200
+
+# cat=header,expert/header_logo_main/; type=int+; label= Header-Logo: Height
+themes.configuration.header.logo.main.height >
+

@@ -1,0 +1,11 @@
+page.includeCSS {
+    montserrat = //fonts.googleapis.com/css?family=Montserrat:400,700
+    montserrat {
+        external = 1
+        disableCompression = 1
+        excludeFromConcatenation = 1
+    }
+    theme-numo = EXT:theme_bootstrap_numo/Resources/Public/Stylesheets/theme.css
+    magnific-popup = EXT:theme_bootstrap_numo/Resources/Public/Stylesheets/magnific-popup.css
+}
+

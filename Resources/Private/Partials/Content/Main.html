@@ -1,0 +1,27 @@
+{namespace theme=KayStrobach\Themes\ViewHelpers}
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+    <f:section name="Default">
+        <!-- theme_bootstrap_numo: Partials/Content/Main.html [begin] -->
+
+        <div id="partialContentMain" class="content-column">
+
+            <f:if condition="{0:templateName} == {0:'ContentStartsite'}">
+                <f:then>
+                    <!-- Don't use the H1-Headline, because in Startsite-Layout the H1 wrapped already the logo -->
+                </f:then>
+                <f:else>
+                    <div class="page-header">
+                        <h1><f:cObject typoscriptObjectPath="lib.page.title" /></h1>
+                    </div>
+                </f:else>
+            </f:if>
+
+            <h1>Hello Content!</h1>
+            <!--TYPO3SEARCH_begin-->
+            <f:cObject typoscriptObjectPath="lib.content.onepage" />
+            <!--TYPO3SEARCH_end-->
+        </div>
+
+        <!-- theme_bootstrap_numo: Partials/Content/Main.html [end] -->
+    </f:section>
+</div>

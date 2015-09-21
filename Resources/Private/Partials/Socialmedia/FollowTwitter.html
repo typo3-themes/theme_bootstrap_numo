@@ -3,9 +3,7 @@
 	<f:section name="Default">
 		<!-- theme_bootstrap: Partials/Socialmedia/FollowTwitter.html [begin] -->
 		<f:if condition="{theme:constant(constant:'themes.configuration.socialmedia.useTwitter')}">
-			<a href="{theme:constant(constant:'themes.configuration.socialmedia.twitterUsername')}" target="_blank" title="Twitter">
-				<i class="fa fa-twitter"></i>
-			</a>
+			<f:link.external uri="https://twitter.com/{theme:constant(constant:'themes.configuration.socialmedia.twitterUsername')}" target="_blank"><i class="fa fa-twitter"></i></f:link.external>
 		</f:if>
 		<!-- theme_bootstrap: Partials/Socialmedia/FollowTwitter.html [end] -->
 	</f:section>

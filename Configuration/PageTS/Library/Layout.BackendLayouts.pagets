@@ -2,7 +2,7 @@
 #
 # Just delete the backendlayouts which arn't required
 #
-mod.web_layout.BackendLayouts.Content >
+#mod.web_layout.BackendLayouts.Content >
 mod.web_layout.BackendLayouts.ContentEmpty >
 mod.web_layout.BackendLayouts.ContentMenu >
 mod.web_layout.BackendLayouts.ContentMenuSidebar >

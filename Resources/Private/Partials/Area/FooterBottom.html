@@ -5,18 +5,27 @@
         <div class="bg-footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <p class="copyright">2014 &copy; Mamoot Studio - All Rights Reserved</p>
-                    </div>
+                    <f:if condition="{templateName} == 'ContentStartsite'">
+                        <f:then>
+                            <div class="col-sm-6"><p class="copyright">
+                        </f:then>
+                        <f:else>
+                            <div class="col-sm-12"><p class="text-center">
+                        </f:else>
+                    </f:if>
+                    2014 &copy; Mamoot Studio - All Rights Reserved</p>
+                </div>
+                <f:if condition="{templateName} == 'ContentStartsite'">
                     <div class="col-sm-6">
                         <ul class="list-inline pull-right">
                             <li class="border-right"><a href="#home" data-scroll>Top</a></li>
                             <f:cObject typoscriptObjectPath="lib.menu.footer"/>
                         </ul>
                     </div>
-                </div>
+                </f:if>
             </div>
         </div>
-        <!-- theme_bootstrap_numo: Partials/Area/FooterBottom.html [end] -->
-    </f:section>
+</div>
+<!-- theme_bootstrap_numo: Partials/Area/FooterBottom.html [end] -->
+</f:section>
 </div>

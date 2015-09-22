@@ -9,34 +9,43 @@ lib.menu.footer {
             NO = 1
             NO {
                 doNotLinkIt = 1
-                wrapItemAndSub = <li class="border-right">|</li>|*|<li class="border-right">|</li>|*|<li>|</li>
-                stdWrap.cObject = TEXT
+                wrapItemAndSub = <li class="border-right">|</li>|*|<li class="border-right">|</li>|*|<span>|</span>
+                stdWrap.cObject = CASE
                 stdWrap.cObject {
-                    field = nav_title // title
-                    typolink {
-                        parameter.data = field:pid
-                        parameter.ifEmpty.data = page:uid
-                        parameter.insertData = 1
-                        title.field = title // subtitle
-                        ATagParams = data-scroll
-                        section {
-                            data = field:title
-                            insertData = 1
-                            trim = 1
-                            crop = 80
-                            stdWrap {
-                                case = lower
-                                replacement {
-                                    10 {
-                                        search.char = 32
-                                        replace =
-                                    }
-                                    20 {
-                                        search = &
-                                        replace = and
+                    key.field = doktype
+                    1 = TEXT
+                    1 {
+                        field = nav_title // title
+                        typolink {
+                            parameter.data = field:pid
+                            parameter.ifEmpty.data = page:uid
+                            parameter.insertData = 1
+                            title.field = title // subtitle
+                            ATagParams = data-scroll
+                            section {
+                                data = field:title
+                                insertData = 1
+                                trim = 1
+                                crop = 80
+                                stdWrap {
+                                    case = lower
+                                    replacement {
+                                        10 {
+                                            search.char = 32
+                                            replace =
+                                        }
+                                        20 {
+                                            search = &
+                                            replace = and
+                                        }
                                     }
                                 }
                             }
+                        }
+                        if {
+                            value.field = backend_layout
+                            equals = pagets__Content
+                            negate = 1
                         }
                     }
                 }

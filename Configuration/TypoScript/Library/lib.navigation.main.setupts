@@ -1,0 +1,79 @@
+lib.navigation.main >
+lib.navigation.main = COA
+lib.navigation.main {
+	wrap = <div class="navbar-collapse collapse"><ul class="nav navbar-nav navbar-right">|</ul></div>
+	20 = HMENU
+	20 {
+		1 = TMENU
+		1 {
+			noBlur = 1
+			NO = 1
+			NO {
+				doNotLinkIt = 1
+                stdWrap.cObject = CASE
+                stdWrap.cObject {
+                    key.field = doktype
+                    3 = TEXT
+                    3 {
+                        field = nav_title // title
+                        typolink {
+                            wrap = <li>|</li>
+                            parameter = {field:uid}
+                            parameter.insertData = 1
+                            title.field = title // subtitle
+                        }
+                    }
+                    1 = CASE
+                    1 {
+                        key.field = backend_layout
+                        pagets__Content = TEXT
+                        pagets__Content {
+                            field = nav_title // title
+                            typolink {
+                                wrap = <li>|</li>
+                                parameter = {field:uid}
+                                parameter.insertData = 1
+                                title.field = title // subtitle
+                            }
+                        }
+                        default = TEXT
+                        default {
+                            field = nav_title // title
+                            typolink {
+                                wrap = <li>|</li>
+                                parameter.data = field:pid
+                                parameter.ifEmpty.data = page:uid
+                                parameter.insertData = 1
+                                title.field = title // subtitle
+                                section {
+                                    data = field:title
+                                    insertData = 1
+                                    trim = 1
+                                    crop = 80
+                                    stdWrap {
+                                        case = lower
+                                        replacement {
+                                            10 {
+                                                search.char = 32
+                                                replace =
+                                            }
+                                            20 {
+                                                search = &
+                                                replace = and
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+			}
+		}
+	}
+
+	40 = TEXT
+	40 {
+		value = <li><a data-scroll href="#contact"><span class="contact">Contact</span></a></li>
+	}
+}

@@ -3,25 +3,26 @@ lib.content.onepage = COA
 lib.content.onepage {
     20 = HMENU
     20 {
-        entryLevel = 0
-        # excludeDoktypes < lib.navigation.main.10.excludeDoktypes
         1 = TMENU
         1 {
-            noBlur = 1
             NO = 1
             NO {
                 doNotLinkIt = 1
-                doNotShowLink = 1
-                stdWrap2 {
+                stdWrap >
+                stdWrap {
                     cObject = COA
                     cObject {
+                        if {
+                            value.field = backend_layout
+                            equals = pagets__Content
+                            negate = 1
+                        }
                         10 = LOAD_REGISTER
                         10 {
                             curentPageId.cObject = TEXT
                             curentPageId.cObject {
                                 field = uid
                             }
-
                             sectionID.cObject = TEXT
                             sectionID.cObject {
                                 data = field:title
@@ -43,30 +44,22 @@ lib.content.onepage {
                                 }
                             }
                         }
-
-                        20 < page.10
-#                        20 {
-#                            variables {
-#                                showHeader.value = 0
-#                                showFooter.value = 0
-#                            }
-#                        }
-
-                        wrap = <section id="{register:sectionID}">|</section>
-                        wrap.insertData = 1
+                        20 = CONTENT
+                        20 {
+                            table = tt_content
+                            select {
+                                pidInList.field = uid
+                                orderBy = sorting
+                                where = colPos=0
+                                languageField = sys_language_uid
+                            }
+                            wrap = <section id="{register:sectionID}">|</section>
+                            wrap.insertData = 1
+                            renderObj < tt_content
+                        }
                     }
                 }
-
-                wrapItemAndSub = |
             }
         }
-
-        # 2 < .1
     }
-
-    90 = RESTORE_REGISTER
 }
-
-# page.10.variables.onePage.value = 1
-
-

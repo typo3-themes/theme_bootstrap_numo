@@ -34,7 +34,7 @@ lib.content.onepage {
                                     replacement {
                                         10 {
                                             search.char = 32
-                                            replace = _
+                                            replace = -
                                         }
                                         20 {
                                             search = &

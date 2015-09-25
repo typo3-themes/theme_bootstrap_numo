@@ -55,7 +55,7 @@ lib.navigation.main {
                                         replacement {
                                             10 {
                                                 search.char = 32
-                                                replace =
+                                                replace = -
                                             }
                                             20 {
                                                 search = &

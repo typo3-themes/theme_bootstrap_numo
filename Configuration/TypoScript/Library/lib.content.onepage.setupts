@@ -1,65 +1,98 @@
 lib.content.onepage >
 lib.content.onepage = COA
 lib.content.onepage {
-    20 = HMENU
-    20 {
-        1 = TMENU
-        1 {
-            NO = 1
-            NO {
-                doNotLinkIt = 1
-                stdWrap >
-                stdWrap {
-                    cObject = COA
-                    cObject {
-                        if {
-                            value.field = backend_layout
-                            equals = pagets__Content
-                            negate = 1
-                        }
-                        10 = LOAD_REGISTER
-                        10 {
-                            curentPageId.cObject = TEXT
-                            curentPageId.cObject {
-                                field = uid
-                            }
-                            sectionID.cObject = TEXT
-                            sectionID.cObject {
-                                data = field:title
-                                insertData = 1
-                                trim = 1
-                                crop = 80
-                                stdWrap {
-                                    case = lower
-                                    replacement {
-                                        10 {
-                                            search.char = 32
-                                            replace = -
-                                        }
-                                        20 {
-                                            search = &
-                                            replace = and
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        20 = CONTENT
-                        20 {
-                            table = tt_content
-                            select {
-                                pidInList.field = uid
-                                orderBy = sorting
-                                where = colPos=0
-                                languageField = sys_language_uid
-                            }
-                            wrap = <section id="{register:sectionID}">|</section>
-                            wrap.insertData = 1
-                            renderObj < tt_content
-                        }
-                    }
-                }
-            }
-        }
-    }
+	20 = HMENU
+	20 {
+		1 = TMENU
+		1 {
+			NO = 1
+			NO {
+				doNotLinkIt = 1
+				stdWrap >
+				stdWrap {
+					cObject = CASE
+					cObject {
+						key.field = doktype
+						1 = COA
+						1 {
+							if {
+								value.field = backend_layout
+								equals = pagets__Content
+								negate = 1
+							}
+
+							10 = LOAD_REGISTER
+							10 {
+								curentPageId.cObject = TEXT
+								curentPageId.cObject {
+									field = uid
+								}
+
+								sectionID.cObject = TEXT
+								sectionID.cObject {
+									data = field:title
+									insertData = 1
+									trim = 1
+									crop = 80
+									stdWrap {
+										case = lower
+										replacement {
+											10 {
+												search.char = 32
+												replace = -
+											}
+
+											20 {
+												search = &
+												replace = and
+											}
+										}
+									}
+								}
+								even.cObject = TEXT
+								even.cObject {
+									value = section-even
+									stdWrap.if.isFalse {
+										prioriCalc = 1
+										cObject = TEXT
+										cObject {
+											insertData = 1
+											value = {register:count_HMENU_MENUOBJ}%2
+										}
+									}
+								}
+								odd.cObject = TEXT
+								odd.cObject {
+									value = section-odd
+									stdWrap.if.isTrue {
+										prioriCalc = 1
+										cObject = TEXT
+										cObject {
+											insertData = 1
+											value = {register:count_HMENU_MENUOBJ}%2
+										}
+									}
+								}
+							}
+
+							20 = CONTENT
+							20 {
+								table = tt_content
+								select {
+									pidInList.field = uid
+									orderBy = sorting
+									where = colPos=0
+									languageField = sys_language_uid
+								}
+
+								wrap = <section id="{register:sectionID}" class="{register:even}{register:odd}">|</section>
+								wrap.insertData = 1
+								renderObj < tt_content
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

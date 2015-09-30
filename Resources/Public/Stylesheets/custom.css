@@ -1,0 +1,30 @@
+/* custom css
+ * should become less file later
+ *  */
+
+.section-even {
+    background: #F2F2F2;
+}
+
+.news .news-list-view .article .news-img-wrap{
+    float:none;
+    margin-left:0;
+    margin-right:0;
+}
+.news .news-list-view .article .news-img-wrap a {
+    float: none;
+    padding: 0;
+}
+.news .news-list-view .article .news-img-wrap img {
+ 	float: none;   
+}
+
+.news .article .news-img-wrap a {
+    border: none;
+}
+
+.news-single .article .news-img-wrap {
+    float: none;
+    width: auto;
+    margin: 0;
+}

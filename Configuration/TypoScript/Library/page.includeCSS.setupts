@@ -15,4 +15,5 @@ page.includeCSS {
 
 	theme-numo = EXT:theme_bootstrap_numo/Resources/Public/Stylesheets/theme.css
 	magnific-popup = EXT:theme_bootstrap_numo/Resources/Public/Stylesheets/magnific-popup.css
+    custom = EXT:theme_bootstrap_numo/Resources/Public/Stylesheets/custom.css
 }

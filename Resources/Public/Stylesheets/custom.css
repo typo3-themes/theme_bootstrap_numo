@@ -28,3 +28,7 @@
     width: auto;
     margin: 0;
 }
+
+.news .page-navigation ul {
+    float: none;   
+}

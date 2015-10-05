@@ -43,6 +43,8 @@ plugin.tx_news {
 			}
             paginate {
                  itemsPerPage = 5
+                 insertAbove = 0
+                 templatePath = {$themes.resourcesPrivatePath}Extensions/News/Templates/ViewHelpers/Widget/Paginate/Index.html
             }
 
 		}
@@ -63,6 +65,7 @@ plugin.tx_news {
 		}
 		de {
 			more-link = mehr >>
+            back-link = zurück
 		}
 	}
 }

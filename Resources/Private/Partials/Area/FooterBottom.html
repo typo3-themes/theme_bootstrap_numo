@@ -1,5 +1,6 @@
 {namespace theme=KayStrobach\Themes\ViewHelpers}
-<div xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
     <f:section name="Default">
         <!-- theme_bootstrap_numo: Partials/Area/FooterBottom.html [begin] -->
         <div class="bg-footer-bottom">
@@ -7,25 +8,25 @@
                 <div class="row">
                     <f:if condition="{templateName} == 'ContentStartsite'">
                         <f:then>
-                            <div class="col-sm-6"><p class="copyright">
-                        </f:then>
-                        <f:else>
-                            <div class="col-sm-12"><p class="text-center">
-                        </f:else>
+                    		<div class="col-sm-6"><p class="copyright">
+                         </f:then>
+                         <f:else>
+                             <div class="col-sm-12"><p class="text-center">
+                          </f:else>
                     </f:if>
-                    2014 &copy; Mamoot Studio - All Rights Reserved</p>
-                </div>
-                <f:if condition="{templateName} == 'ContentStartsite'">
+                        <f:cObject typoscriptObjectPath="lib.footer.copyright" /></p>
+                    </div>
+					<f:if condition="{templateName} == 'ContentStartsite'">
                     <div class="col-sm-6">
                         <ul class="list-inline pull-right">
-                            <li class="border-right"><a href="#home" data-scroll>Top</a></li>
+                            <li class="border-right"><a href="#home" data-scroll><f:translate key="topLink_label" extensionName="{theme:constant(constant:'themes.name')}" /></a></li>
                             <f:cObject typoscriptObjectPath="lib.menu.footer"/>
                         </ul>
                     </div>
-                </f:if>
+					</f:if>
+                </div>
             </div>
         </div>
-</div>
-<!-- theme_bootstrap_numo: Partials/Area/FooterBottom.html [end] -->
-</f:section>
+        <!-- theme_bootstrap_numo: Partials/Area/FooterBottom.html [end] -->
+    </f:section>
 </div>

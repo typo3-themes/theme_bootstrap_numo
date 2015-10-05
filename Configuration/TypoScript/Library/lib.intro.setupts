@@ -1,0 +1,12 @@
+lib.intro.bg >
+lib.intro.bg = IMG_RESOURCE
+lib.intro.bg {
+    file {
+        import.data = levelmedia: -1, slide
+        import.listNum = 0
+        treatIdAsReference = 1
+    }
+    stdWrap.wrap = style="background-image: url('|');"
+    stdWrap.required = 1
+}
+

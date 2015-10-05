@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.0">
+	<file source-language="en"
+		datatype="plaintext"
+		original="messages"
+		date="2015-10-01T16:43:51Z"
+		product-name="theme_bootstrap_numo">
+		<header/>
+		<body>
+			<trans-unit id="contact_text" xml:space="preserve">
+				<source>Feel free to contact me for your next project</source>
+			</trans-unit>
+            <trans-unit id="contact_label" xml:space="preserve">
+				<source>E-MAIL</source>
+			</trans-unit>
+			<trans-unit id="topLink_label" xml:space="preserve">
+				<source>Top</source>
+			</trans-unit>
+			<trans-unit id="toggle_navigation" xml:space="preserve">
+				<source>Toggle Navigation</source>
+			</trans-unit>
+			<!--
+				Hier können nun beliebig viele
+				weitere Sprachwerte äquivalent
+				zum trans-unit Tag folgen.
+
+				English?
+			-->
+
+			<!-- whatever labels -->
+
+
+
+		</body>
+	</file>
+</xliff>

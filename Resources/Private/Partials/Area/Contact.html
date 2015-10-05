@@ -1,19 +1,23 @@
 {namespace theme=KayStrobach\Themes\ViewHelpers}
-<div xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
     <f:section name="Default">
         <!-- theme_bootstrap_numo: Partials/Area/Contact.html [begin] -->
+
         <div class="bg-contact" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 text-center">
-                        <h3>Feel free to contact me for your next project</h3>
-                        <f:link.email email="{theme:constant(constant: 'themes.configuration.footer.email')}" class="mail">
-                            <span class="glyphicon glyphicon-envelope"></span>E-MAIL
+                        <h3><f:translate key="contact_text" extensionName="{theme:constant(constant:'themes.name')}" /></h3>
+                        <!-- YOUR E-MAIL-->
+                        <f:link.email email="{theme:constant(constant:'themes.configuration.footer.email')}" class="mail">
+                            <span class="glyphicon glyphicon-envelope"></span><f:translate key="contact_label" extensionName="{theme:constant(constant:'themes.name')}" />
                         </f:link.email>
                     </div>
                 </div>
             </div>
         </div>
+
         <!-- theme_bootstrap_numo: Partials/Area/Contact.html [end] -->
     </f:section>
 </div>

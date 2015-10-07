@@ -1,0 +1,65 @@
+//
+// General
+// --------------------------------------------------
+
+body {
+    padding-top: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.brand-primary {
+    color:@brand-primary;
+}
+
+a {
+  color:#444;
+  &:hover {
+      color:@brand-primary;
+      text-decoration:none;
+  }
+  &:focus {
+    outline: none;
+    text-decoration:none;
+  }
+  &:active {
+      text-decoration:none;
+  }
+}
+
+hr {
+    width: 50px;
+    border: solid 2px #e7e7e7;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 97.5px;
+}
+
+.title {
+    margin-top: 130px;
+    color: #777;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.margin-bottom {
+    margin-bottom: 65px;
+}
+
+@media (max-width:767px) {
+
+    body {
+        padding-top: 0px;
+    }
+
+    .margin-bottom-xs {
+        margin-bottom: 65px;
+    }
+
+    hr {
+        margin-bottom: 65px;
+    }
+
+    .title {
+        margin-top: 65px;
+    }
+}

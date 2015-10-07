@@ -1,0 +1,9 @@
+tt_content.image.20.1 {
+   layout.default.element = <img class="img-responsive" src="###SRC###" width="###WIDTH###" height="###HEIGHT###"###PARAMS######ALTPARAMS######BORDER######SELFCLOSINGTAGSLASH###>
+
+   imageLinkWrap {
+       typolink.ATagParams = class="wrapper-thumbnail"
+       linkParams.wrap = | <i class="fa fa-search fa-3x"></i>
+       linkParams.ATagBeforeWrap = 1
+   }
+}

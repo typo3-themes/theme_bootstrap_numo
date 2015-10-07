@@ -1,0 +1,56 @@
+//
+// Buttons
+// --------------------------------------------------
+
+
+// button
+// ----------------------------------------------------------------------------------------------------
+
+.btn {
+  border: solid #DDDDDD 1px;
+  border-radius: 0px;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  -webkit-transition: background-color .22s ease-out;
+  -moz-transition: background-color .22s ease-out;
+  -o-transition: background-color .22s ease-out;
+  transition: background-color .22s ease-out;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    text-decoration: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline:0px !important;
+  }
+}
+
+
+// button default
+// ----------------------------------------------------------------------------------------------------
+
+.btn-default {
+  color: @brand-secondary;
+  background-color: @brand-primary;
+  border-color: @brand-primary;
+  &:hover {
+    color: @brand-secondary;
+    background-color: #1dcba7;
+    border-color: #1dcba7;
+  }
+  &:focus,
+  &:active,
+  .open .dropdown-toggle& {
+    color: @brand-secondary;
+    background-color:@brand-primary;
+    border-color: @brand-primary;
+  }
+}
+
+
+

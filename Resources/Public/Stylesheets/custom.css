@@ -6,6 +6,7 @@
     background: #F2F2F2;
 }
 
+/*
 .news .news-list-view .article .news-img-wrap{
     float:none;
     margin-left:0;
@@ -32,3 +33,11 @@
 .news .page-navigation ul {
     float: none;   
 }
+
+.wrapper-thumbnail {
+	max-width:2000px;
+}
+
+*/
+
+

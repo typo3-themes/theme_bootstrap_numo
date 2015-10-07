@@ -1,0 +1,38 @@
+//
+// Paginate
+// --------------------------------------------------
+
+.col-pagination {
+    margin-top:40px;
+}
+
+.pagination {
+  .active span {
+    background-color: @brand-primary;
+    border-color: @gray-lighter;
+    &:hover {
+        background-color:@brand-primary;
+        border-color:@gray-lighter;
+      }
+  }
+  li a {
+    -webkit-transition: background-color .22s ease-out;
+    -moz-transition: background-color .22s ease-out;
+    -o-transition: background-color .22s ease-out;
+    transition: background-color .22s ease-out;
+    color:@brand-primary;
+    border-color:@gray-lighter;
+    &:hover {
+      color:@brand-secondary;
+      background-color:@brand-primary;
+      border-color:@gray-lighter;
+    }
+  }
+}
+
+.pager li a {
+  -webkit-transition: background-color .22s ease-out;
+  -moz-transition: background-color .22s ease-out;
+  -o-transition: background-color .22s ease-out;
+  transition: background-color .22s ease-out;
+}

@@ -1,0 +1,102 @@
+//
+// Intro
+// --------------------------------------------------
+
+.bg-intro {
+  color: #FFF;
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  /*background-size*/
+  -moz-background-size: cover;
+  background-size: cover;
+  .row {
+    padding-top: 242px;
+    padding-bottom: 150px;
+  }
+  h1 {
+    position:relative;
+    top:0px;
+    font-size: 46px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    line-height: 66px;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: bounceInUp;
+    animation-name: bounceInUp;
+    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+  }
+}
+
+.layer-intro {
+    background-color:rgb(34,49,63);
+    /* IE 8 OPACITY */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    background-color: rgba(34,49,63,.9);
+}
+
+
+// Animation
+// --------------------------------------------------
+
+@-webkit-keyframes bounceInUp {
+    0% {
+        opacity: 0;
+        top:1000px;
+    }
+
+    60% {
+        opacity: 1;
+        top:-30px;
+    }
+
+    80% {
+        top:10px;
+    }
+
+    100% {
+        top:0px;
+    }
+}
+
+@keyframes bounceInUp {
+    0% {
+        opacity: 0;
+        top:1000px;
+    }
+
+    60% {
+        opacity: 1;
+        top:-30px;
+    }
+
+    80% {
+        top:10px;
+    }
+
+    100% {
+        top:0px;
+    }
+}
+
+
+
+@media (max-width:767px) { 
+
+  .bg-intro {
+    h1 {
+      font-size: 26px;
+      line-height: 32px;
+    }
+    .row {
+        padding-top: 105px;
+        padding-bottom: 65px;
+    }
+  }
+}
+

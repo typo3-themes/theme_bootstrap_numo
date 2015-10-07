@@ -1,0 +1,231 @@
+//
+// Main
+// --------------------------------------------------
+
+// Onepager Start
+// --------------------------------------------------
+
+.section-even {
+    background: #F2F2F2;
+}
+
+
+
+
+
+
+
+
+
+
+
+// Blog with News Extension
+// --------------------------------------------------
+
+.title-blog {
+  margin-top:30px;
+  /*transition*/
+  -webkit-transition: all .22s ease-out;
+  -moz-transition: all .22s ease-out;
+  -o-transition: all .22s ease-out;
+  transition: all .22s ease-out;
+  .navbar.tiny & {
+    margin-top:12px;
+    margin-bottom:0px;
+  }
+}
+
+.bg-intro-blog {
+  min-height:590px;
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  /*background-size*/
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+.layer-intro-blog {
+  min-height:590px;
+  background-color:rgb(34,49,63);
+  /* IE 8 OPACITY */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  background-color: rgba(34,49,63,.9);
+}
+
+.wrapper-blog{
+  background-color:#FFF;
+  position:relative;
+  top:-300px;
+  padding:50px 65px;
+  -webkit-box-shadow: 0px 4px 0px 4px rgba(51,51,51,0.04);
+  -moz-box-shadow: 0px 4px 0px 4px rgba(51,51,51,0.04);
+  box-shadow: 0px 4px 0px 4px rgba(51,51,51,0.04);
+  margin-bottom:-150px;
+  hr {
+    width:100%;
+    border:0px;
+    border-bottom:solid 1px #EEEEEE;
+    margin-top:40px;
+    margin-bottom:60px;
+  }
+  .row {
+    margin-bottom:20px;
+  }
+  .img-featured {
+    border-radius:2px;
+    margin-bottom:20px;
+  }
+  a .img-featured {
+    /*transition*/
+    -webkit-transition: opacity .22s ease-out;
+    -moz-transition: opactiy .22s ease-out;
+    -o-transition: opacity .22s ease-out;
+    transition: opacity .22s ease-out;
+    &:hover {
+        opacity:0.9;
+    }
+  }
+}
+
+.wrapper-disqus{
+  margin-top:80px;
+}
+
+
+// Blog Typography
+// --------------------------------------------------
+
+.wrapper-blog {
+  h1, h2, h3, h4, h5, h6 {
+    margin-top:20px;
+    margin-bottom:10px;
+  }
+  p, ul, ol {
+    font-family: 'Titillium Web', sans-serif;
+    font-size:18px;
+    line-height:28px;
+    font-weight:300;
+    color:#666;
+    -webkit-font-smoothing: antialiased;
+  }
+  p {
+    margin-top:0px;
+  }
+  ul, ol, img {
+    margin-top:20px;
+    margin-bottom:10px;
+  }
+  .author {
+    margin-bottom:20px;
+  }
+  .title-post {
+    margin-top:0px;
+    margin-bottom:20px;
+    text-transform: uppercase;
+    color:#444;
+    -webkit-transition: color .22s ease-out;
+    -moz-transition: color .22s ease-out;
+    -o-transition: color .22s ease-out;
+    transition: color .22s ease-out;
+  }
+  a .title-post:hover {
+      color:@brand-primary;
+  }
+}
+
+
+// Blog Gallery
+// --------------------------------------------------
+
+.wrapper-thumbnail {
+  border-radius:4px;
+  position: relative;
+  display: block;
+  background-color: #34495E;
+  margin-bottom:20px;
+  max-width:1000px;
+  img {
+    border-radius:4px;
+    /*transition*/
+    -webkit-transition: opacity .22s ease-out;
+    -moz-transition: opacity .22s ease-out;
+    -o-transition: opacity .22s ease-out;
+    transition: opacity .22s ease-out;
+  }
+  &:hover {
+    img {
+    /* IE 8 OPACITY*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+    opacity: 0.4;
+    }
+    .fa-search{
+        visibility:visible;
+    }
+  }
+}
+
+.fa-search {
+  visibility:hidden;
+  position:absolute;
+  top:0px;
+  color:white;
+  line-height:0px;
+  top:50%;
+  left:0px;
+  right:0px;
+  text-align:center;
+}
+
+
+
+
+@media (max-width:767px) {
+  
+  .title-blog {
+    margin-top:12px;
+    /*transition*/
+    -webkit-transition: all .22s ease-out;
+    -moz-transition: all .22s ease-out;
+    -o-transition: all .22s ease-out;
+    transition: all .22s ease-out;
+    font-size:24px;
+    .navbar.tiny & {
+      margin-top:12px;
+      margin-bottom:0px;
+    }
+  }
+
+  .row-blog {
+      padding:10px;
+  }
+
+  .wrapper-blog {
+    top:-60px;
+    padding:30px 20px;
+    margin-bottom:0px;
+    h1, h2, h3, h4, h5, h6 {
+      margin-top:40px;
+      margin-bottom:10px;
+    }
+    .row {
+        margin-bottom:0px;
+    }
+    .title-post {
+        font-size:22px;
+    }
+    .author {
+        font-size:15px;
+    }
+  }
+
+  .navbar-brand-blog {
+      margin-left:-15px;
+  }
+
+  .bg-intro-blog, .layer-intro-blog {
+      min-height:160px;
+  }
+}
+
+

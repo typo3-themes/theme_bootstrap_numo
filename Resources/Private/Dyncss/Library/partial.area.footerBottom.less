@@ -1,0 +1,46 @@
+//
+// FooterBottom
+// --------------------------------------------------
+
+.bg-footer-bottom {
+  background-color: #162029;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  p {
+    margin: 0;
+    padding: 0;
+    color: #3a536b;
+    font-size: 15px;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    li a {
+      color:#3a536b;
+      &:hover {
+        color:@brand-primary;
+        text-decoration: none;
+      }
+    }
+  }
+  .border-right {
+    border-right: 1px solid #3a536b;
+    padding-right: 12px;
+  }
+}
+
+
+@media (max-width:767px) {
+
+  .bg-footer-bottom {
+    .copyright {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    ul {
+      text-align: center;
+      float: none !important;
+    }
+  }
+}

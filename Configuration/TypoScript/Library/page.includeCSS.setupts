@@ -13,7 +13,8 @@ page.includeCSS {
 		excludeFromConcatenation = 1
 	}
 
-	theme-numo = EXT:theme_bootstrap_numo/Resources/Public/Stylesheets/theme.css
+	#theme-numo = EXT:theme_bootstrap_numo/Resources/Public/Stylesheets/theme.css
+    theme-numo-less = EXT:theme_bootstrap_numo/Resources/Private/Dyncss/import.less
 	magnific-popup = EXT:theme_bootstrap_numo/Resources/Public/Stylesheets/magnific-popup.css
     custom = EXT:theme_bootstrap_numo/Resources/Public/Stylesheets/custom.css
 }

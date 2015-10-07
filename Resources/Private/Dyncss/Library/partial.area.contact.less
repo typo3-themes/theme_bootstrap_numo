@@ -1,0 +1,52 @@
+//
+// Contact
+// --------------------------------------------------
+
+.bg-contact {
+  background-color: @brand-primary;
+  color: @brand-secondary;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  .glyphicon-envelope {
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+  }
+  .mail {
+    color: @brand-secondary;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 30px;
+    border: solid 2px @brand-secondary;
+    border-radius: 4px;
+    margin: 0;
+    display: inline-block;
+    &:hover {
+      background-color: @brand-secondary;
+      color: @brand-primary;
+      -webkit-transition: all .1s linear;
+      -moz-transition: all .1s linear;
+      -o-transition: all .1s linear;
+      transition: all .1s linear;
+    }
+  }
+  h3 {
+    margin-top: 16px;
+    display: inline-block;
+    margin-right: 50px;
+  }
+}
+
+@media (max-width:767px) {
+ 
+  .bg-contact {
+    h3 {
+      display: block;
+      margin: 0;
+      margin-bottom: 32px;
+    }
+    .mail {
+      margin: 0;
+    }
+  }
+}

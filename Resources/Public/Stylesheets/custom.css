@@ -2,42 +2,20 @@
  * should become less file later
  *  */
 
-.section-even {
-    background: #F2F2F2;
+
+div.csc-textpic-right .csc-textpic-imagewrap,
+div.csc-textpic-left .csc-textpic-imagewrap,
+div.csc-textpic-center .csc-textpic-center-outer,
+div.csc-textpic-center .csc-textpic-center-inner {
+    max-width:100%;
 }
 
-/*
-.news .news-list-view .article .news-img-wrap{
-    float:none;
-    margin-left:0;
-    margin-right:0;
-}
-.news .news-list-view .article .news-img-wrap a {
-    float: none;
-    padding: 0;
-}
-.news .news-list-view .article .news-img-wrap img {
- 	float: none;   
+div.csc-textpic .csc-textpic-imagewrap figure, div.csc-textpic figure.csc-textpic-imagewrap {
+    display: block;
 }
 
-.news .article .news-img-wrap a {
-    border: none;
-}
+figcaption.csc-textpic-caption { display: block; }
 
-.news-single .article .news-img-wrap {
-    float: none;
-    width: auto;
-    margin: 0;
-}
-
-.news .page-navigation ul {
-    float: none;   
-}
-
-.wrapper-thumbnail {
-	max-width:2000px;
-}
-
-*/
+	
 
 

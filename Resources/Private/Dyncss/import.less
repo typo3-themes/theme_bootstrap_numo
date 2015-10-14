@@ -1,5 +1,5 @@
 
-//@import "../../../../theme_bootstrap/Resources/Private/Dyncss/import.less";
+@import "../../../../theme_bootstrap/Resources/Private/Dyncss/import.less";
 
 // Define all Variables, so that EXT:dyncss
 // is able to overwrite them.
@@ -11,6 +11,9 @@
 @navbar-default-link-hover-color: @brand-primary;
 @navbar-default-link-active-color: @brand-primary;
 @border-radius-base: 0;
+
+@primary-lighter: lighten(@brand-primary,3%);
+
 
 // Base URL for images
 @baseurlImage: '/typo3conf/ext/theme_bootstrap/Resources/Public/Images/';

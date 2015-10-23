@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.0">
 	<file source-language="en"
+	    target-language="de"
 		datatype="plaintext"
 		original="messages"
 		date="2015-10-01T16:43:51Z"
@@ -9,15 +9,19 @@
 		<body>
 			<trans-unit id="contact_text" xml:space="preserve">
 				<source>Feel free to contact me for your next project</source>
+				<target>Kontaktieren Sie mich gerne für Ihr nächstes Projekt</target>
 			</trans-unit>
             <trans-unit id="contact_label" xml:space="preserve">
 				<source>E-MAIL</source>
+				<target>E-MAIL</target>
 			</trans-unit>
 			<trans-unit id="topLink_label" xml:space="preserve">
 				<source>Top</source>
+				<target>nach oben</target>
 			</trans-unit>
 			<trans-unit id="toggle_navigation" xml:space="preserve">
 				<source>Toggle Navigation</source>
+				<target>Toggle Navigation</target>
 			</trans-unit>
 			<!--
 				Hier können nun beliebig viele
@@ -30,6 +34,7 @@
 			<!-- Variants labels -->
 			<trans-unit id="content.variants.caption_transition" xml:space="preserve">
 				<source>Caption Transition</source>
+				<target>Bildtext Überblendung</target>
 			</trans-unit>
 
 			<!-- whatever labels -->

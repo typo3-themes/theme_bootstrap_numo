@@ -1,9 +1,26 @@
 tt_content.image.20.1 {
-   layout.default.element = <img class="img-responsive" src="###SRC###" width="###WIDTH###" height="###HEIGHT###"###PARAMS######ALTPARAMS######BORDER######SELFCLOSINGTAGSLASH###>
-
-   imageLinkWrap {
-       typolink.ATagParams = class="wrapper-thumbnail"
-       linkParams.wrap = | <i class="fa fa-search fa-3x"></i>
-       linkParams.ATagBeforeWrap = 1
-   }
+    layout.default.element.cObject = CASE
+    layout.default.element.cObject {
+        key.field = tx_themes_variants
+        caption-transition = COA
+        caption-transition {
+            10 = TEXT
+            10.value = <img class="img-responsive" src="###SRC###" width="###WIDTH###" height="###HEIGHT###"###PARAMS######ALTPARAMS######BORDER######SELFCLOSINGTAGSLASH###>
+            20 = TEXT
+            20.field = header
+            20.wrap = <h3 class="category">|</h3>
+        }
+        default = TEXT
+        default.value = <img class="img-responsive" src="###SRC###" width="###WIDTH###" height="###HEIGHT###"###PARAMS######ALTPARAMS######BORDER######SELFCLOSINGTAGSLASH###>
+    }
 }
+
+[globalVar = GP:tx_news_pi1|news > 0]
+tt_content.image.20.1 {
+    imageLinkWrap {
+        typolink.ATagParams = class="wrapper-thumbnail"
+        linkParams.wrap = | <i class="fa fa-search fa-3x"></i>
+        linkParams.ATagBeforeWrap = 1
+    }
+}
+[global]

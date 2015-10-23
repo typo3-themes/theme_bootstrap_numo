@@ -1,0 +1,11 @@
+themes {
+	content {
+		# Variants for content elements
+		variants {
+			# ctype: image
+			image {
+				caption-transition = LLL:EXT:theme_bootstrap_numo/Resources/Private/Language/locallang.xlf:content.variants.caption_transition
+			}
+		}
+	}
+}

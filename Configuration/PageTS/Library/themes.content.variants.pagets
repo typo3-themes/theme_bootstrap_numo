@@ -2,6 +2,10 @@ themes {
 	content {
 		# Variants for content elements
 		variants {
+			# ctype: text
+			text {
+				symbol-column = LLL:EXT:theme_bootstrap_numo/Resources/Private/Language/locallang.xlf:content.variants.symbol_column
+			}
 			# ctype: image
 			image {
 				caption-transition = LLL:EXT:theme_bootstrap_numo/Resources/Private/Language/locallang.xlf:content.variants.caption_transition

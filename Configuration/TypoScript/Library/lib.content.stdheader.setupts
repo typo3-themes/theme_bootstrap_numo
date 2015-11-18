@@ -1,0 +1,56 @@
+lib.stdheader.3.headerClass.cObject.10 >
+lib.stdheader.3.headerClass.cObject.10 = CASE
+lib.stdheader.3.headerClass.cObject.10 {
+	key.field = tx_themes_variants
+	symbol-column = TEXT
+	symbol-column.noTrimWrap = |col-xs-10| |
+	default = TEXT
+	default {
+		field = header_position
+		required = 1
+		noTrimWrap = |csc-header-alignment-| |
+	}
+}
+
+lib.stdheader.9 = CASE
+lib.stdheader.9 {
+	key.field = tx_themes_variants
+	symbol-column = TEXT
+	symbol-column {
+		fieldRequired = tx_themes_icon
+		field = tx_themes_icon
+		stdWrap.postUserFunc = KayStrobach\Themes\Frontend\CssClassMapper->mapGenericToFramework
+		stdWrap.postUserFunc {
+			iconMapping =< lib.icons.cssMap
+		}
+		required = 1
+		noTrimWrap = |<div class="col-xs-2"><i class="| fa-4x" aria-hidden="true"></i></div> |
+	}
+}
+
+lib.stdheader.10.setCurrent.prepend >
+lib.stdheader.10.setCurrent.prepend = CASE
+lib.stdheader.10.setCurrent.prepend {
+	key.field = tx_themes_variants
+	symbol-column = TEXT
+	default = TEXT
+	default {
+		fieldRequired = tx_themes_icon
+		field = tx_themes_icon
+		stdWrap.postUserFunc = KayStrobach\Themes\Frontend\CssClassMapper->mapGenericToFramework
+		stdWrap.postUserFunc {
+			iconMapping =< lib.icons.cssMap
+		}
+		required = 1
+		noTrimWrap = |<i class="| fa-2x" aria-hidden="true"></i> |
+	}
+}
+
+tt_content.text.20.wrap = <div class="col-xs-10 col-xs-offset-2">|</div>
+tt_content.text.20.wrap.if {
+	equals.field = tx_themes_variants
+	value = symbol-column
+}
+
+
+

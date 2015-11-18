@@ -36,6 +36,10 @@
 				<source>Caption Transition</source>
 				<target>Bildtext Überblendung</target>
 			</trans-unit>
+			<trans-unit id="content.variants.symbol_column" xml:space="preserve">
+				<source>Symbol in column</source>
+				<target>Symbol in Spalte</target>
+			</trans-unit>
 
 			<!-- whatever labels -->
 

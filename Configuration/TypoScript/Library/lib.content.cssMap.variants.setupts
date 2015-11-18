@@ -2,4 +2,7 @@ lib.content.cssMap.variants {
 
 	# Variant available for image element
 	caption-transition = wrapper-portfolio
+
+	# Variant available for text element
+	symbol-column = symbol-column
 }

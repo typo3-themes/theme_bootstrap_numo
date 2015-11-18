@@ -31,6 +31,9 @@
 			<trans-unit id="content.variants.caption_transition" xml:space="preserve">
 				<source>Caption Transition</source>
 			</trans-unit>
+			<trans-unit id="content.variants.symbol_column" xml:space="preserve">
+				<source>Symbol in column</source>
+			</trans-unit>
 
 			<!-- whatever labels -->
 

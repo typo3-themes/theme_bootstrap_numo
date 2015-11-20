@@ -1,0 +1,21 @@
+RTE.default {
+  
+  # User Elements (displayed with button user)
+  userElements {
+      90 {
+          2 = LLL:EXT:theme_bootstrap_numo/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.progressbar_name
+          2.description = LLL:EXT:theme_bootstrap_numo/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.progressbar_description
+          2.mode = wrap
+          2.content = <progressbar>|</progressbar>
+      }
+  }
+  
+  # To allow the new tags
+  proc.allowTags := addToList(progressbar)
+  proc.allowTagsOutside := addToList(progressbar)
+  proc.entryHTMLparser_db.allowTags := addToList(progressbar)
+  
+}
+
+# Diese Zeile übernimmt die geänderte RTE-Konfiguration für den Editor, wenn dieser im Frontend verwendet wird.
+RTE.default.FE < RTE.default

@@ -1,0 +1,21 @@
+<xliff version="1.0">
+	<file source-language="en"
+		target-language="de"
+		datatype="plaintext"
+		original="messages"
+		date="2014-04-13T18:20:51Z"
+		product-name="rtehtmlarea">
+		<header/>
+		<body>
+      <!-- Typography - Inline text elements -->
+			<trans-unit id="rte.progressbar_name" xml:space="preserve">
+				<source>Progressbar</source>
+				<target>Prozentbalken</target>
+			</trans-unit>
+			<trans-unit id="rte.progressbar_description" xml:space="preserve">
+				<source>The selected text will be displayed as progress bar.</source>
+				<target>Der ausgewählte Text wird als Prozentbalken dargestellt.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

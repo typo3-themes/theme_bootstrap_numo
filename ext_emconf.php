@@ -9,13 +9,12 @@
 # www.fluid-template-manager.de
 #
 ########################################################################
-
 $EM_CONF[$_EXTKEY] = array(
 	'title'            => 'Theme-Bootstrap-Numo',
 	'description'      => 'TYPO3 compatible adaption of the \"Numo - Flat Portfolio for Creatives Theme\"',
 	'category'         => 'templates',
 	'shy'              => 0,
-	'version'          => '0.0.1',
+	'version'          => '0.1.0',
 	'dependencies'     => '',
 	'conflicts'        => '',
 	'priority'         => 'bottom',
@@ -27,8 +26,8 @@ $EM_CONF[$_EXTKEY] = array(
 	'modify_tables'    => '',
 	'clearcacheonload' => 0,
 	'lockType'         => '',
-	'author'           => '',
-	'author_email'     => '',
+	'author'           => 'Carla Froitzheim',
+	'author_email'     => 'cf@computer-foto.de',
 	'author_company'   => '',
 	'CGLcompliance'      => '',
 	'CGLcompliance_note' => '',
@@ -45,5 +44,5 @@ $EM_CONF[$_EXTKEY] = array(
 	),
 	'_md5_values_when_last_written' => ''
 );
-
 ?>
+

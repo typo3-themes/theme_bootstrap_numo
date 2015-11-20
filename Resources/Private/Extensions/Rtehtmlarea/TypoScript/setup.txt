@@ -1,0 +1,16 @@
+# Modify ParseFunc setup for RTE content (css_styled_content)
+lib.parseFunc_RTE {
+  # Eigener Tag oder auch Schnipsel
+  tags {
+    progressbar = COA
+    progressbar {
+      10 = LOAD_REGISTER
+      10.param.cObject = TEXT
+      10.param.cObject.current = 1
+      20 = TEXT
+      20.value = <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="{REGISTER:param}" aria-valuemin="0" aria-valuemax="100" style="width: {REGISTER:param}%"><span class="sr-only"></span></div></div>
+      20.value.insertData = 1
+      stripNL = 1
+    }
+  } 
+}

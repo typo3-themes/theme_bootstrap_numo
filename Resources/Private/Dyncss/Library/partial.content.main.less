@@ -6,8 +6,12 @@
 // --------------------------------------------------
 
 .section-even {
-    background: @gray-lighter;
+    background: #F2F2F2;
+    color: @gray-light;
     padding: 130px 0;
+    h2 {
+      margin-top: 0px;
+    }
 }
 
 .section-odd {
@@ -15,6 +19,7 @@
     .csc-frame-rulerAfter {
       margin-bottom: 97.5px;
       h2 {
+        margin-top: 0px;
         color: @gray-light;
         position: relative;
         &:before {
@@ -101,6 +106,34 @@
     margin-bottom: 65px;
   }
 }
+
+
+// Skills
+// --------------------------------------------------
+
+p.lead {
+  padding-right: 40px;
+  font-size: 18px;
+  line-height: 32px;
+  margin-top: 14px;
+}
+
+@media (max-width:767px) {
+  p.lead {
+    padding-right: 0px;
+  }
+}
+
+.progress {
+  background-color: @gray-lighter;
+  border-radius: 4px;
+}
+
+.progress-bar {
+  background-color: @gray;
+}
+
+
 
 // Service
 // --------------------------------------------------

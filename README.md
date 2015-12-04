@@ -2,9 +2,6 @@
 TYPO3 compatible adaption of the "Numo - Flat Portfolio for Creatives Theme" by MamootStudio
 
 ![Screenshot](Meta/Screenshots/screenshot.png)
-![Screenshot](Meta/Screenshots/screenshot-01.png)
-![Screenshot](Meta/Screenshots/screenshot-02.png)
-![Screenshot](Meta/Screenshots/screenshot-03.png)
 
 # Features
 

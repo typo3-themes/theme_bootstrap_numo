@@ -10,7 +10,7 @@
 #
 ########################################################################
 $EM_CONF[$_EXTKEY] = array(
-	'title'            => 'Theme-Bootstrap-Numo',
+	'title'            => 'Numo Bootstrap Theme',
 	'description'      => 'TYPO3 compatible adaption of the \"Numo - Flat Portfolio for Creatives Theme\"',
 	'category'         => 'templates',
 	'shy'              => 0,
@@ -33,7 +33,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'CGLcompliance_note' => '',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '6.0.0-6.99.99',
+			'typo3' => '6.2.0-7.6.99',
 			'themes' => '1.0.1-2.99.99',
 			'theme_bootstrap' => '1.0.0-9.99.99',
 		),
@@ -45,4 +45,3 @@ $EM_CONF[$_EXTKEY] = array(
 	'_md5_values_when_last_written' => ''
 );
 ?>
-

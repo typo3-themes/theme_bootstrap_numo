@@ -21,7 +21,7 @@ parentTheme:
 # Whether a live demo is available (optional)
 demoLocation:
   -
-    uri            : http://
+    uri            : http://numo.typo3sitebox.de
     title          : Theme-Bootstrap-Numo Demo
 
 # Keywords (optional)
@@ -33,12 +33,24 @@ keywords:
   - flat
   - minimal
 
+# Constants categories which are used for constants in this theme
+constants:
+  availableCategories: [theme,colors,font,meta,pages,container,slider,lightbox]
+
 # Screenshots for the preview gallery (optional, multiple possible)
 screenshots:
   -
     file           : EXT:theme_bootstrap_numo/Meta/Screenshots/screenshot.png
-    caption        : Screenshot Homepage
-
+    caption        : Screenshot Homepage Intro
+  -
+    file           : EXT:theme_bootstrap_numo/Meta/Screenshots/screenshot-01.png
+    caption        : Screenshot Homepage Section
+  -
+    file           : EXT:theme_bootstrap_numo/Meta/Screenshots/screenshot-02.png
+    caption        : Screenshot Homepage Section
+  -
+    file           : EXT:theme_bootstrap_numo/Meta/Screenshots/screenshot-03.png
+    caption        : Screenshot Blog
 # Name of the authors (optional, multiple possible)
 authors:
   -

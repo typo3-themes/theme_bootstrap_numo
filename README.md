@@ -1,5 +1,5 @@
 # theme_bootstrap_numo
-TYPO3 compatible adaption of the "Numo - Flat Portfolio for Creatives Theme" by MamootStudio
+TYPO3 compatible adaptation of the "Numo - Flat Portfolio for Creatives Theme" by MamootStudio
 
 ![Screenshot](Meta/Screenshots/screenshot.png)
 
